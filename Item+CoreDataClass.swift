@@ -1,9 +1,9 @@
 //
 //  Item+CoreDataClass.swift
-//  Project333
+//  OutfitMe
 //
-//  Created by Eric Wei on 2017-04-01.
-//  Copyright © 2017 EricWei. All rights reserved.
+//  Created by Joey Singer on 2017-04-13.
+//  Copyright © 2017 Joey Singer. All rights reserved.
 //
 
 import Foundation
