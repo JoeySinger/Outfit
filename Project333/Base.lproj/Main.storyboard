@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYy-pK-1kw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYy-pK-1kw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Closet-->
         <scene sceneID="tP8-Bh-c2m">
             <objects>
                 <viewController id="yRG-Xn-zAk" customClass="HomeViewController" customModule="Project333" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,7 +100,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="N9O-Pj-WKM"/>
+                    <tabBarItem key="tabBarItem" title="Closet" id="N9O-Pj-WKM"/>
                     <navigationItem key="navigationItem" id="Qqt-8k-lDW"/>
                     <connections>
                         <outlet property="loadingIndicator" destination="bgN-6d-Ld8" id="ZlH-6T-JeC"/>
