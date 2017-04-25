@@ -12,28 +12,56 @@ import Foundation
 import UIKit
 import CoreData
 import SystemConfiguration
+import CoreLocation
 
-class HomeViewController: UIViewController, UISearchBarDelegate {
+class HomeViewController: UIViewController, UISearchBarDelegate,CLLocationManagerDelegate {
     
-    @IBOutlet weak var weatherLabel: UILabel!
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var makeoutFitButton: UIButton!
+    @IBOutlet weak var favbutttons: UIButton!
+    
     
     var coreDataStack: CoreDataStack!
     var todaysOutfit = [Item]()
+    let locationManager = CLLocationManager()
     
+    
+    var long = 0.0
+    var lat = 0.0
+    var city: String = "City"
+    var userLocation = CLLocation()
     override func viewWillAppear(_ animated: Bool) {
         todaysOutfit.removeAll()
-        loadingIndicator.isHidden = true
+        //loadingIndicator.isHidden = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let delegate = UIApplication.shared.delegate as! AppDelegate
         coreDataStack = delegate.stack
-        searchBar.delegate = self
+        //searchBar.delegate = self
+        locationManager.delegate = self
+        //let locationManager = CLLocationManager()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        if(locationManager.location != nil){
+            userLocation = locationManager.location!
+        }
+        //getCityName()
+        //print("does it load")
+        
+        makeoutFitButton.layer.cornerRadius = 10
+        makeoutFitButton.clipsToBounds = true
+        
+        favbutttons.layer.cornerRadius = 10
+        favbutttons.clipsToBounds = true
         
     }
+    
+    
+    
+    
     
     @IBAction func newOutfitButtonClicked(_ sender: Any) {
         
@@ -119,20 +147,21 @@ class HomeViewController: UIViewController, UISearchBarDelegate {
         return (isReachable && !needsConnection)
     }
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    
+    
+    
+    /*func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         if isInternetAvailable() {
-            self.weatherLabel.isHidden = true
             self.loadingIndicator.isHidden = false
             loadingIndicator.startAnimating()
-            
             WeatherClient.sharedInstance().getWeatherResponse(cityName: self.searchBar.text!) { (temperature, locationName, error) in
                 DispatchQueue.main.async {
                     self.weatherLabel.isHidden = false
                     if (error != nil) {
                         self.weatherLabel.text = "location don't exist"
                     } else{
-                        self.weatherLabel.text = "\(locationName): \(temperature-273.15) C"
+                        self.weatherLabel.text = "\(locationName): \(temperature-273.15) F"
                     }
                     self.loadingIndicator.stopAnimating()
                     self.loadingIndicator.isHidden = true
@@ -143,5 +172,43 @@ class HomeViewController: UIViewController, UISearchBarDelegate {
             alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
-    }
+    }*/
+    
+    
+    
+    /*func getCityName(){
+        let geocoder = CLGeocoder()
+        let location = userLocation
+        print(location.coordinate.latitude)
+        print(location.coordinate.longitude)
+        geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
+            var placemark: CLPlacemark!
+            placemark = (placemarks?[0])
+            print("does it go in this method")
+            if let city = placemark.addressDictionary?["City"] as? String{
+                print("so it does go in the if")
+                self.city = city
+                WeatherClient.sharedInstance().getWeatherResponse(cityName: self.city, completionHandler: { (temperature, city, error) in
+                    DispatchQueue.main.async {
+                        self.weatherLabel.isHidden = false
+                        if (error != nil) {
+                            self.weatherLabel.text = "location don't exist"
+                        } else{
+                            self.city += ": \(temperature - 273.15) F"
+                            self.weatherLabel.text = "\(self.city) "
+                        }
+                        self.loadingIndicator.stopAnimating()
+                        self.loadingIndicator.isHidden = true
+                    }
+                })
+                //print(self.city)
+            }else{
+                //print(error?.localizedDescription)
+            }
+        }
+    }*/
+    
+    
+
 }
+

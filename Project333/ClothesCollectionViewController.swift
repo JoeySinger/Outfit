@@ -42,6 +42,7 @@ class ClothesCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        isSelectingItems = true;
         //able to identity the clothing item by clicking on its picture
         if isSelectingItems {
             let chosenItem = clothesItems[indexPath.row].objectID.uriRepresentation()
@@ -53,8 +54,30 @@ class ClothesCollectionViewController: UICollectionViewController {
                 print("")
             }
             
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClothesItemViewCell", for: indexPath) as! ClothesItemViewCell
+            
+            cell.clothesItemImage.image = UIImage(data: clothesItems[indexPath.row].imageData as! Data)
+            
+            let imageView = cell.clothesItemImage
+            let newImageView = UIImageView(image: imageView?.image)
+            newImageView.frame = UIScreen.main.bounds
+            newImageView.backgroundColor = .black
+            newImageView.contentMode = .scaleAspectFit
+            newImageView.isUserInteractionEnabled = true
+            let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+            newImageView.addGestureRecognizer(tap)
+            self.view.addSubview(newImageView)
+            self.navigationController?.isNavigationBarHidden = true
+            self.tabBarController?.tabBar.isHidden = true
+            
             print("item with URL = \(chosenItem) added")
         }
+    }
+    
+    func dismissFullscreenImage(sender: UITapGestureRecognizer) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        sender.view?.removeFromSuperview()
     }
     
     func setupViewCells() {

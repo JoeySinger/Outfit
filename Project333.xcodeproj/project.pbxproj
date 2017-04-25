@@ -37,6 +37,7 @@
 		6CEF0C4F1E90934600038F29 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF0C4D1E90934600038F29 /* Item+CoreDataClass.swift */; };
 		6CEF0C501E90934600038F29 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF0C4E1E90934600038F29 /* Item+CoreDataProperties.swift */; };
 		6CEF0C521E9095AC00038F29 /* ClothesArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF0C511E9095AC00038F29 /* ClothesArray.swift */; };
+		BB0F70C51EAD93C70038973B /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F70C41EAD93C70038973B /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		6CEF0C4D1E90934600038F29 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataClass.swift"; path = "../Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6CEF0C4E1E90934600038F29 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6CEF0C511E9095AC00038F29 /* ClothesArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesArray.swift; sourceTree = "<group>"; };
+		BB0F70C41EAD93C70038973B /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				6C9912C21E956701008B8C84 /* PickOutfitViewController.swift */,
 				6C5C4AAF1E96E84200870688 /* CustomNavController.swift */,
 				6CA7C66C1E98648A00CBD0CD /* SavedOutfitViewController.swift */,
+				BB0F70C41EAD93C70038973B /* WeatherViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				6CEF0C4A1E9081DB00038F29 /* ClothesCollectionViewController.swift in Sources */,
 				6C01EDE81E8DF45F00EAD232 /* ClothesContstants.swift in Sources */,
 				6CEF0C521E9095AC00038F29 /* ClothesArray.swift in Sources */,
+				BB0F70C51EAD93C70038973B /* WeatherViewController.swift in Sources */,
 				6C9912C31E956701008B8C84 /* PickOutfitViewController.swift in Sources */,
 				6C01EDDB1E8DE89E00EAD232 /* Constants.swift in Sources */,
 			);
@@ -395,6 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 787F267NC8;
 				INFOPLIST_FILE = Project333/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 787F267NC8;
 				INFOPLIST_FILE = Project333/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
