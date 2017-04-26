@@ -49,9 +49,17 @@ class WeatherViewController: UIViewController, UISearchBarDelegate,CLLocationMan
             userLocation = locationManager.location!
         }
         getCityName()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
         //print("does it load")
         
         
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     
@@ -156,7 +164,7 @@ class WeatherViewController: UIViewController, UISearchBarDelegate,CLLocationMan
                     if (error != nil) {
                         self.weatherLabel.text = "location don't exist"
                     } else{
-                        self.weatherLabel.text = "\(locationName): \(temperature-273.15) F"
+                        self.weatherLabel.text = "\(locationName): \((temperature-273.15)*(9/5)+32) °F"
                     }
                     self.loadingIndicator.stopAnimating()
                     self.loadingIndicator.isHidden = true
@@ -189,7 +197,7 @@ class WeatherViewController: UIViewController, UISearchBarDelegate,CLLocationMan
                         if (error != nil) {
                             self.weatherLabel.text = "location don't exist"
                         } else{
-                            self.city += ": \(temperature - 273.15) F"
+                            self.city += ": \((temperature-273.15)*(9/5)+32) °F"
                             self.weatherLabel.text = "\(self.city) "
                         }
                         self.loadingIndicator.stopAnimating()

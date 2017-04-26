@@ -29,12 +29,12 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string></string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Pick an image</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>shows User location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>shows user location when using</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Pick an image</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

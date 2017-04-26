@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYy-pK-1kw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYy-pK-1kw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,18 +25,6 @@
                                 <rect key="frame" x="41" y="54" width="292" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViB-TB-XKB">
-                                <rect key="frame" x="102" y="487" width="170" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Make Outfit">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="newOutfitButtonClicked:" destination="yRG-Xn-zAk" eventType="touchUpInside" id="EXd-pb-KiO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zc8-Uo-gOI">
                                 <rect key="frame" x="102" y="367" width="170" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,6 +35,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="9gp-D2-o1l" kind="presentation" id="ez1-1Y-s5k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViB-TB-XKB">
+                                <rect key="frame" x="102" y="472" width="170" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Make Outfit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newOutfitButtonClicked:" destination="yRG-Xn-zAk" eventType="touchUpInside" id="EXd-pb-KiO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -137,7 +137,7 @@
         <scene sceneID="MQv-sQ-Nf7">
             <objects>
                 <navigationController id="dwp-wr-QHs" customClass="CustomNavController" customModule="Project333" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Hlf-Wp-li2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Hlf-Wp-li2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -184,7 +184,7 @@
                                 <sections/>
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KMY-tt-cXd">
-                                <rect key="frame" x="0.0" y="224" width="375" height="379"/>
+                                <rect key="frame" x="0.0" y="224" width="375" height="330"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B9y-Lm-vJo">
                                     <size key="itemSize" width="130" height="130"/>
@@ -464,7 +464,7 @@
             <objects>
                 <navigationController id="CLt-2B-GKi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Wardrobe" image="camera-7" id="kEd-fl-LqW"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="U1o-ZM-7vf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="U1o-ZM-7vf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -560,7 +560,7 @@
         <image name="home-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TAh-eL-vVM"/>
-        <segue reference="CPI-Pa-s57"/>
+        <segue reference="Fyv-ND-deO"/>
+        <segue reference="6WJ-0s-diZ"/>
     </inferredMetricsTieBreakers>
 </document>

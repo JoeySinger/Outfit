@@ -206,7 +206,7 @@
 				TargetAttributes = {
 					6C9E0E9C1E8B3C9C005CB7D5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 787F267NC8;
+						DevelopmentTeam = 65BMC9DY5P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -397,11 +397,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 787F267NC8;
+				DEVELOPMENT_TEAM = 65BMC9DY5P;
 				INFOPLIST_FILE = Project333/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harsha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Joey.OutfitMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -411,11 +411,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 787F267NC8;
+				DEVELOPMENT_TEAM = 65BMC9DY5P;
 				INFOPLIST_FILE = Project333/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harsha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Joey.OutfitMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

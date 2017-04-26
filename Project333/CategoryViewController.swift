@@ -87,11 +87,11 @@ class CategoryViewController: UITableViewController{
         
         if let fetchAllItems = try? coreDataStack.context.fetch(fetchRequest) as! [Item] {
             //print("total number of items == \(fetchAllItems.count)")
-            if fetchAllItems.count == 33 {
+            if fetchAllItems.count == 100 {
                 addButton.isEnabled = false
-                self.navigationItem.title = "33/33 Items"
+                self.navigationItem.title = "100/100 Items"
             } else {
-                self.navigationItem.title = "\(fetchAllItems.count)/33 Items"
+                self.navigationItem.title = "\(fetchAllItems.count)/100 Items"
             }
         }
         
