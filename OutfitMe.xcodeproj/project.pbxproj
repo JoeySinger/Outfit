@@ -54,7 +54,7 @@
 		6C9912BA1E952146008B8C84 /* OutfitItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutfitItemViewCell.swift; sourceTree = "<group>"; };
 		6C9912C21E956701008B8C84 /* PickOutfitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickOutfitViewController.swift; sourceTree = "<group>"; };
 		6C9912C41E956EA1008B8C84 /* PickItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickItemViewCell.swift; sourceTree = "<group>"; };
-		6C9E0E9D1E8B3C9C005CB7D5 /* Project333.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project333.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9E0E9D1E8B3C9C005CB7D5 /* OutfitMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutfitMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9E0EA01E8B3C9C005CB7D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C9E0EA21E8B3C9C005CB7D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6C9E0EA51E8B3C9C005CB7D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				6C1ABA9F1E9A92B500FF229C /* README.md */,
-				6C9E0E9F1E8B3C9C005CB7D5 /* Project333 */,
+				6C9E0E9F1E8B3C9C005CB7D5 /* OutfitMe */,
 				6C9E0E9E1E8B3C9C005CB7D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,12 +108,12 @@
 		6C9E0E9E1E8B3C9C005CB7D5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C9E0E9D1E8B3C9C005CB7D5 /* Project333.app */,
+				6C9E0E9D1E8B3C9C005CB7D5 /* OutfitMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6C9E0E9F1E8B3C9C005CB7D5 /* Project333 */ = {
+		6C9E0E9F1E8B3C9C005CB7D5 /* OutfitMe */ = {
 			isa = PBXGroup;
 			children = (
 				6C9E0EB21E8B3E3B005CB7D5 /* Model */,
@@ -126,6 +126,7 @@
 				6C9E0EA91E8B3C9C005CB7D5 /* LaunchScreen.storyboard */,
 				6C9E0EAC1E8B3C9C005CB7D5 /* Info.plist */,
 			);
+			name = OutfitMe;
 			path = Project333;
 			sourceTree = "<group>";
 		};
@@ -177,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C9E0E9C1E8B3C9C005CB7D5 /* Project333 */ = {
+		6C9E0E9C1E8B3C9C005CB7D5 /* OutfitMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C9E0EAF1E8B3C9C005CB7D5 /* Build configuration list for PBXNativeTarget "Project333" */;
+			buildConfigurationList = 6C9E0EAF1E8B3C9C005CB7D5 /* Build configuration list for PBXNativeTarget "OutfitMe" */;
 			buildPhases = (
 				6C9E0E991E8B3C9C005CB7D5 /* Sources */,
 				6C9E0E9A1E8B3C9C005CB7D5 /* Frameworks */,
@@ -189,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = Project333;
+			name = OutfitMe;
 			productName = Project333;
-			productReference = 6C9E0E9D1E8B3C9C005CB7D5 /* Project333.app */;
+			productReference = 6C9E0E9D1E8B3C9C005CB7D5 /* OutfitMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -202,7 +203,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = EricWei;
+				ORGANIZATIONNAME = OutfitMe;
 				TargetAttributes = {
 					6C9E0E9C1E8B3C9C005CB7D5 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -211,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6C9E0E981E8B3C9C005CB7D5 /* Build configuration list for PBXProject "Project333" */;
+			buildConfigurationList = 6C9E0E981E8B3C9C005CB7D5 /* Build configuration list for PBXProject "OutfitMe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -224,7 +225,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C9E0E9C1E8B3C9C005CB7D5 /* Project333 */,
+				6C9E0E9C1E8B3C9C005CB7D5 /* OutfitMe */,
 			);
 		};
 /* End PBXProject section */
@@ -424,7 +425,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6C9E0E981E8B3C9C005CB7D5 /* Build configuration list for PBXProject "Project333" */ = {
+		6C9E0E981E8B3C9C005CB7D5 /* Build configuration list for PBXProject "OutfitMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C9E0EAD1E8B3C9C005CB7D5 /* Debug */,
@@ -433,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C9E0EAF1E8B3C9C005CB7D5 /* Build configuration list for PBXNativeTarget "Project333" */ = {
+		6C9E0EAF1E8B3C9C005CB7D5 /* Build configuration list for PBXNativeTarget "OutfitMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C9E0EB01E8B3C9C005CB7D5 /* Debug */,
